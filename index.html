@@ -1,6 +1,67 @@
 <!DOCTYPE html>
-<html">
-    <script>
-        window.location.href = `${ window.location.href}signIn/index.html`;
-    </script>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Sign-In</title>
+    
+    <link rel="stylesheet" href="./css/signIn.css">
+    <link rel="stylesheet" href="./css/signUp.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="containerSignUp">
+            <h1 class="signUpTitle">Sign-Up</h1>
+            <form id="signUpForm">
+                <div class="inputGroupSignUpBox">
+                    <div class="inputGroupSignUp">
+                        <p >Username</p>
+                        <input type="text" id="usernameSignUp" class="usernameSignUp" name="usernameSignUp" required>
+                    </div>
+                    <div class="inputGroupSignUp">
+                        <p>Password</p>
+                        <input type="password" id="passwordSignUp" class="passwordSignUp"name="passwordSignUp" required>
+                    </div>
+                    <div class="inputGroupSignUp">
+                        <p>Confirmar Password</p>
+                        <input type="password" id="confirmPasswordSignUp" class="confirmPasswordSignUp"name="confirmPasswordSignUp" required>
+                    </div>
+                </div>
+                <div class="signUpFormFooter">
+                    <button class="buttonSignUpForm" type="submit">Criar</button>
+                    <a class="goToSignIn" href="#">Voltar para login</a>
+                </div>
+            </form>
+        </div>
+        <div class="containerSignIn">
+            <h1 class="signInTitle">Sign-In</h1>
+            <form id="signInForm">
+                <div class="inputGroupSignInBox">
+                    <div class="inputGroupSignIn">
+                        <p>Username</p>
+                        <input type="text" id="usernameSignIn" class="usernameSignIn" name="usernameSignIn" required>
+                    </div>
+                    <div class="inputGroupSignIn">
+                        <p>Password</p>
+                        <input type="password" id="passwordSignIn" class="passwordSignIn"name="passwordSignIn" required>
+                    </div>
+                </div>
+                <div class="signInFormFooter">
+                    <a class="resetPassword" href="#">Nao lembro minha senha</a>
+                    <button class="buttonSignInForm" type="submit">Entrar</button>
+                    <a class="goToSignUp" href="#">cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="./js/signIn.js"></script>
+<script src="./js/signUp.js"></script>
+<script src="./js/script.js"></script>
 </html>

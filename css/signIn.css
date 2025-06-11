@@ -1,0 +1,94 @@
+
+.containerSignIn{
+    background-color: #ffffff;
+    color: #000000;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+.signInTitle{
+    width: 100%;
+    text-align: center;
+}
+#signInForm{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+.inputGroupSignInBox{
+    width: 100%;
+    height: 200px;
+    gap: 50px;
+}
+.inputGroupSignUp{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    gap: 50px;
+}
+.inputGroupSignUp p{
+   font-size: 12pt;
+   color: #000000c2;
+}
+
+.inputGroupSignUp input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 3px solid #0000005a;
+    background-color: transparent;
+    color: #000000;
+    font-size: 12pt;
+}
+.inputGroupSignUp input:focus {
+    outline: none;
+    border-bottom: 3px solid #00bbff;
+    transition: border-bottom 0.3s;
+}
+
+.signInFormFooter{
+    width: 100%;
+    height: 50px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resetPassword{
+    color: #00bbff;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+}
+
+.buttonSignInForm{
+    width: 100%;
+    height: 50px;
+    background-color: #00bbff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+
+    
+}
+.goToSignUp{
+    color: #00bbff;
+    width: 100%;
+    text-align: center;
+}
