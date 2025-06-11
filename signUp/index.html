@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="containerSignUp">
+            <h1 class="signUpTitle">Sign-Up</h1>
+            <form id="signUpForm">
+                <div class="input-group">
+                    <p>Username</p>
+                    <input type="text" id="username" class="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <p>Password</p>
+                    <input type="password" id="password" class="password"name="password" required>
+                </div>
+                <div class="input-group">
+                    <p>Confirmar Password</p>
+                    <input type="password" id="confirmPassword" class="confirmPassword"name="confirmPassword" required>
+                </div>
+                <button class="buttonSignUpForm" type="submit">Criar</button>
+                <a class="goToSignIn" href="#">Voltar para login</a>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
