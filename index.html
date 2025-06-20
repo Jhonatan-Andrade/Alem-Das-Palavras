@@ -41,7 +41,7 @@
         </div>
         <div class="containerSignIn">
             <h1 class="signInTitle">Sign-In</h1>
-            <form id="signInForm">
+            <form id="signInForm" method="post" action="./php/verificar_login.php">
                 <div class="inputGroupSignInBox">
                     <div class="inputGroupSignIn">
                         <p>Username</p>
@@ -51,9 +51,9 @@
                         <p>Password</p>
                         <input type="password" id="passwordSignIn" class="passwordSignIn"name="passwordSignIn" required>
                     </div>
+                    <a class="resetPassword" href="#">Nao lembro minha senha</a>
                 </div>
                 <div class="signInFormFooter">
-                    <a class="resetPassword" href="#">Nao lembro minha senha</a>
                     <button class="buttonSignInForm" type="submit">Entrar</button>
                     <a class="goToSignUp" href="#">cadastre-se</a>
                 </div>
@@ -63,5 +63,5 @@
 </body>
 <script src="./js/signIn.js"></script>
 <script src="./js/signUp.js"></script>
-<script src="./js/script.js"></script>
+<script src="./js/nav.js"></script>
 </html>
