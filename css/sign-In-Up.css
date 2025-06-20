@@ -1,0 +1,78 @@
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.form{
+    padding: 2rem;
+    border-radius: 20px;
+    min-width: 350px;
+    height: 450px;
+    flex-direction: column;
+    background-color: white;
+
+}
+.sign-in-form{
+    display: flex;
+}
+.sign-up-form{
+    display: none;
+}
+
+.form h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 250px;
+    gap: 5px;
+}
+.form-group-input {
+    width: 100%;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-group-input label {
+    display: block;
+    margin-bottom: 0.25rem;
+}
+.form-group-input input[type="text"],
+.form-group-input input[type="password"] {
+    width: 100%;
+    height: 36px;
+    padding: 0.5rem;
+    background-color: #B8B8B8;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 8px;
+}
+.submitButton {
+    width: 100%;
+    height: 36px;
+    padding: 0.5rem;
+    background: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.erroText{
+    color:red;
+    width: 100%;
+    height: 36px;
+}
+.navButton{
+    height: 36px;
+    color: #000000;
+    border: none;
+    font-weight: bold;
+}

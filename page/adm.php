@@ -1,4 +1,21 @@
 <?php
+    session_start();
+    if ((!isset($_SESSION["username"]))) {
+        unset($_SESSION["username"]);
+        header("location: ./user.php"); 
+        exit();
+    }else{
+        $username = $_SESSION["username"];
+        if($username !== "adm") {
+            header("location: ./home.php"); 
+            exit();
+        }
+    }
+    function logout() {
+        $_SESSION["username"] = null;
+        header("location: ./user.php"); 
+        exit();
+    }
     include '../db/services.php';
     $users = readUsers($db);
 
@@ -6,7 +23,7 @@
         $id = $_POST['userId'];
         $stmt = deleteUser($db,  $id);
         if($stmt) {
-            header("location: ./userList.php"); 
+            header("location: ./adm.php"); 
         } else {
             $message = "erro ao deletar";
         }
@@ -17,7 +34,7 @@
         $username = $_POST['userName'];
         $stmt = changeUserName($db,  $id, $username);
         if($stmt) {
-            header("location: ./userList.php"); 
+            header("location: ./adm.php"); 
         } else {
             $message = "erro ao iditar $userpassword";
         }
@@ -27,7 +44,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lista de Usuarios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>ADM</title>
 </head>
 <style>
     body {
@@ -120,8 +140,7 @@
         <?php endforeach; ?>
     </ul>
     <p class="erroText"><?php if (isset($message)) echo $message; ?></p>
-    <a class="link" href="./sign-in.php"> sign-in</a>
-    <a class="link" href="./sign-up.php"> sign-up</a>
+    <a class="link" href="goback.php">go back</a>
     <script>
 
         function update(params) {
