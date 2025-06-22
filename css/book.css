@@ -104,9 +104,12 @@ main {
     height:36px;
     border: none;
     border-radius: 10px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     background-image: url(../assets/favoriteIcon.png);
     background-repeat: no-repeat;
     background-size: cover;
   
+}
+.existFavorite{
+    background-color: rgb(24, 150, 66);
 }
