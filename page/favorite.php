@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/favorite.css">
     <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
@@ -28,20 +28,11 @@
             <ul>
                 <li id="userMenuItem"><button onclick="openModalUpload()" class="user menuItem" type="button"></button></li>
                 <li id="olaMenuItem"><p class="ola">Olá  <?php if (isset($username)) echo $username; ?></p></li>
-                <li id="favoriteMenuItem"><a class="favorite menuItem" href="favorite.php"></a></li>
-                <li id="logoutMenuItem"><a class="logout menuItem"  href="goback.php" ></a></li>
+                <li id="logoutMenuItem"><a class="logout menuItem" type="button" href="goback.php" ></a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="search-box">
-            <div class="search">
-                <input id="search" autocomplete="off" type="text">
-                <button  class="searchButton"onclick="searchBooks()">
-                    <img src="../assets/search.png" alt="search" width="18px" >
-                </button>
-            </div>
-        </div>
         <div class="booksbox" id="books">
             
         </div>
@@ -60,5 +51,5 @@
     </div>
 </body>
 <script src="../js/imgUpLoad.js" ></script>
-<script src="../js/home.js" ></script>
+<script src="../js/favorite.js" ></script>
 </html>

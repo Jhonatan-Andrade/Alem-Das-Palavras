@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+    position: relative;
+}
+main {
+    width: 100%;
+    height:88vh;
+    display:flex;
+    justify-content: center;
+    align-items: center
+}
+.bookConteiner {
+    width:600px;
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 20px 20px 60px #00000060,
+    -20px -5px 30px  #00000060 ;
+    border-radius: 20px;
+    padding: 10px;
+}
+.bookBox {
+    width: 100%;
+    height:380px;
+    display: flex;
+    flex-direction: row;
+}
+.bookImgAndLinks {
+    width:200px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.bookImgAndLinks img {
+    width:200px;
+}
+.bookAbout{
+    width: 100%;
+    height:100%;
+    padding-left:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bookInfo {
+    width: 100%;
+    height:20%;
+}
+.bookDescription {
+    width: 100%;
+    height:80%;
+    padding-top: 5px;
+    overflow: auto;
+}
+
+.bookDownload {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bookDownload a{
+    width: 95px;
+    height:36px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height:36px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.bookFavoriteAndStore{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.storeButton{
+    width: 70%;
+    height:36px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height:36px;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.addFavorite{
+    width: 36px;
+    height:36px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    background-image: url(../assets/favoriteIcon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
