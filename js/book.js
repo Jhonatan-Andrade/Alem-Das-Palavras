@@ -55,15 +55,11 @@ fetch(url)
     showBook(book)
 })
 function addFavorite(){
-    
-    
     const favorite = JSON.parse(localStorage.getItem("favorite"))
-    let arr = favorite.filter((i)=>i.id === dataFavorite.id)
     favorite.push(dataFavorite)
-    if (arr.length !== 0) {
-        return
-    }
+
+    localStorage.setItem("favorite",JSON.stringify(favorite))
+
     const addFavoriteButton = document.querySelector(".addFavorite")
     addFavoriteButton.style="background-color: rgb(24, 150, 66);"
-    localStorage.setItem("favorite",JSON.stringify(favorite))
 }
